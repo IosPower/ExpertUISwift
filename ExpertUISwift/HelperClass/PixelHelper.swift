@@ -126,7 +126,7 @@ extension CGFloat {
         print(self)
         return self
     }
-    
+
     fileprivate mutating func setYPositionAutomatic(constrInPixel: CGFloat) -> CGFloat {
         let screenheight = UIScreen.main.bounds.size.height
         switch screenheight {

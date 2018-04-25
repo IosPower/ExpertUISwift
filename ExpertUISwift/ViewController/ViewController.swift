@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     // UIView Outlets
     @IBOutlet weak var viewDetails: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -55,7 +54,6 @@ class ViewController: UIViewController {
 
     // MARK: - Button Action
     @IBAction func btnNext(_ sender: Any) {
-       
     }
 }
 
