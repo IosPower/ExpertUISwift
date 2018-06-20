@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C54188D20DA6A26003C9260 /* MONTSERRAT-BOLD_0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 1C54188B20DA6A26003C9260 /* MONTSERRAT-BOLD_0.TTF */; };
+		1C54188E20DA6A26003C9260 /* MONTSERRAT-REGULAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 1C54188C20DA6A26003C9260 /* MONTSERRAT-REGULAR.TTF */; };
 		1CB6A0E4209074B9008B7AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB6A0E2209074B9008B7AF0 /* Main.storyboard */; };
 		1CB6A0E6209074B9008B7AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB6A0E5209074B9008B7AF0 /* Assets.xcassets */; };
 		1CB6A0E9209074B9008B7AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB6A0E7209074B9008B7AF0 /* LaunchScreen.storyboard */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		005E22E23FF3F83E73A92EFF /* Pods-ExpertUISwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpertUISwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExpertUISwift/Pods-ExpertUISwift.debug.xcconfig"; sourceTree = "<group>"; };
+		1C54188B20DA6A26003C9260 /* MONTSERRAT-BOLD_0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MONTSERRAT-BOLD_0.TTF"; sourceTree = "<group>"; };
+		1C54188C20DA6A26003C9260 /* MONTSERRAT-REGULAR.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MONTSERRAT-REGULAR.TTF"; sourceTree = "<group>"; };
 		1CB6A0DB209074B9008B7AF0 /* ExpertUISwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpertUISwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB6A0E3209074B9008B7AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CB6A0E5209074B9008B7AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C54188A20DA6A26003C9260 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1C54188B20DA6A26003C9260 /* MONTSERRAT-BOLD_0.TTF */,
+				1C54188C20DA6A26003C9260 /* MONTSERRAT-REGULAR.TTF */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		1CB6A0D2209074B9008B7AF0 = {
 			isa = PBXGroup;
 			children = (
@@ -66,9 +79,10 @@
 		1CB6A0DD209074B9008B7AF0 /* ExpertUISwift */ = {
 			isa = PBXGroup;
 			children = (
+				1CB6A0F72090B1B1008B7AF0 /* AppDelegate */,
 				1CB6A1032090B1FE008B7AF0 /* HelperClass */,
 				1CB6A0FD2090B1BA008B7AF0 /* ViewController */,
-				1CB6A0F72090B1B1008B7AF0 /* AppDelegate */,
+				1C54188A20DA6A26003C9260 /* Support */,
 				1CB6A0E2209074B9008B7AF0 /* Main.storyboard */,
 				1CB6A0E5209074B9008B7AF0 /* Assets.xcassets */,
 				1CB6A0E7209074B9008B7AF0 /* LaunchScreen.storyboard */,
@@ -181,9 +195,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C54188E20DA6A26003C9260 /* MONTSERRAT-REGULAR.TTF in Resources */,
 				1CB6A0F32090757E008B7AF0 /* .swiftlint.yml in Resources */,
 				1CB6A0E9209074B9008B7AF0 /* LaunchScreen.storyboard in Resources */,
 				1CB6A0E6209074B9008B7AF0 /* Assets.xcassets in Resources */,
+				1C54188D20DA6A26003C9260 /* MONTSERRAT-BOLD_0.TTF in Resources */,
 				1CB6A0E4209074B9008B7AF0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
