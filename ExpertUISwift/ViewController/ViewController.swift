@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         
         // setupUI()
         DispatchQueue.main.async {
-             self.getAllViewsAndSetLayout()
+             self.viewsAllSetLayout()
         }
     }
     
@@ -62,29 +62,10 @@ class ViewController: UIViewController {
     }
     
     // MARK: - Method 2
-    /// getAllViewsAndSetLayout
-    func getAllViewsAndSetLayout() {
-        var arrViews: [UIView] = []
-        //subviews From
-        func subviewsFrom(view: UIView) {
-            arrViews.append(view)
-            for view in view.subviews {
-                subviewsFrom(view: view)
-            }
-        }
-        
-        subviewsFrom(view: viewMain)
-        
-        for viewCheckinh in arrViews {
-            // This Public Method is Used For Automatic set Constraints According To Device screen Size
-            PixelHelper.setConstraintAutomatic(constr: viewCheckinh.constraints)
-        }
-        
-        let arrFilter = arrViews.filter({$0 is UILabel || $0 is UITextView || $0 is UITextField || $0 is UIButton})
-        // This Public Method is Used For Automatic set Font Size According To Device screen Size
-        
-        PixelHelper.setFontForDeviceFrom(obj: arrFilter)
-       //PixelHelper.setFontForDeviceFrom(obj: arrFilter, isSetStaticSize: true)
+    /// viewsAllSetLayout
+    func viewsAllSetLayout() {
+       // PixelHelper.setConstraintAutomaticFroMainView(viewMain: viewMain)
+        PixelHelper.setConstraintAutomaticFroMainView(viewMain: viewMain, isSetFont: true, isSetFontWithPixel: true)
     }
     
     // MARK: - Button Action

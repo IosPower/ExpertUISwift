@@ -60,6 +60,40 @@ public class PixelHelper: NSObject {
         return yposition.setYPositionAutomatic(constrInPixel: yposition)
     }
     
+    // MARK: - Class Function For Set ConstraintAutomatic From MainView
+    /// setConstraintAutomaticFroMainView
+    ///
+    /// - Parameters:
+    ///   - viewMain: view main
+    ///   - isSetFont: if you want to set font so true
+    ///   - isSetFontWithPixel: if isSetFont true so set isSetFontWithPixel true or false
+    public class func setConstraintAutomaticFroMainView(viewMain: UIView, isSetFont: Bool = false, isSetFontWithPixel: Bool = true) {
+        var arrViews: [UIView] = []
+        //subviews From
+        func subviewsFrom(view: UIView) {
+            arrViews.append(view)
+            for view in view.subviews {
+                subviewsFrom(view: view)
+            }
+        }
+        subviewsFrom(view: viewMain)
+        for viewCheckinh in arrViews {
+            // This Public Method is Used For Automatic set Constraints According To Device screen Size
+            PixelHelper.setConstraintAutomatic(constr: viewCheckinh.constraints)
+        }
+        
+        let arrFilter = arrViews.filter({$0 is UILabel || $0 is UITextView || $0 is UITextField || $0 is UIButton})
+        switch (isSetFont, isSetFontWithPixel) {
+        case (true, true):
+            // This Public Method is Used For Automatic set Font Size According To Device screen Size
+            PixelHelper.setFontForDeviceFrom(obj: arrFilter)
+        case (true, false):
+            PixelHelper.setFontForDeviceFrom(obj: arrFilter, isSetStaticSize: true)
+        default:
+            print("")
+        }
+    }
+    
     // MARK: - Class Function For Set ConstraintAutomatic
     /// setConstraintAutomatic
     ///
