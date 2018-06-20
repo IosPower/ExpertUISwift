@@ -38,7 +38,9 @@ class ViewController: UIViewController {
         // use method 1 or method 2
         
         // setupUI()
-        getAllViewsAndSetLayout()
+        DispatchQueue.main.async {
+             self.getAllViewsAndSetLayout()
+        }
     }
     
     // MARK: - Method 1
