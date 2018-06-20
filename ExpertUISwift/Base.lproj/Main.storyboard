@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jjo-2j-yBW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jjo-2j-yBW">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,7 +44,7 @@
                                                 <rect key="frame" x="11" y="220" width="393" height="516"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leroy Martin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUv-u7-HIF">
-                                                        <rect key="frame" x="131.33333333333337" y="78.666666666666686" width="130.66666666666663" height="28.333333333333329"/>
+                                                        <rect key="frame" x="122.33333333333336" y="78.666666666666686" width="148.66666666666663" height="28.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="23.329999923706055"/>
                                                         <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -53,73 +53,73 @@
                                                         <rect key="frame" x="21" y="132" width="26" height="26"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_ic" translatesAutoresizingMaskIntoConstraints="NO" id="s6j-Dg-3Zf">
-                                                        <rect key="frame" x="21" y="204" width="26" height="26"/>
+                                                        <rect key="frame" x="21" y="205" width="26" height="26"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobile_number_ic" translatesAutoresizingMaskIntoConstraints="NO" id="YPT-vo-vnn">
-                                                        <rect key="frame" x="21" y="276.66666666666669" width="26" height="26"/>
+                                                        <rect key="frame" x="21" y="278.66666666666669" width="26" height="26"/>
                                                     </imageView>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birthday_ic" translatesAutoresizingMaskIntoConstraints="NO" id="wm9-uN-3Vb">
-                                                        <rect key="frame" x="21" y="349" width="26" height="26"/>
+                                                        <rect key="frame" x="21" y="352" width="26" height="26"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQG-4M-FhH">
-                                                        <rect key="frame" x="60" y="137" width="33.666666666666657" height="15"/>
+                                                        <rect key="frame" x="60" y="137" width="39" height="15"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12.659999847412109"/>
                                                         <color key="textColor" white="0.0" alpha="0.70491037190000005" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Leroy Martin" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MAs-hG-Z0q">
-                                                        <rect key="frame" x="60" y="163" width="325" height="20"/>
+                                                        <rect key="frame" x="60" y="163" width="325" height="21"/>
                                                         <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16.659999847412109"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDv-Kt-X4a">
-                                                        <rect key="frame" x="60" y="209.66666666666669" width="45.333333333333343" height="15"/>
+                                                        <rect key="frame" x="60" y="210.66666666666669" width="51.666666666666657" height="15"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12.659999847412109"/>
                                                         <color key="textColor" white="0.0" alpha="0.70491037190000005" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="leroymartin@example.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D1W-qJ-hfk">
-                                                        <rect key="frame" x="60" y="235.66666666666669" width="325" height="20"/>
+                                                        <rect key="frame" x="60" y="236.66666666666669" width="325" height="21"/>
                                                         <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16.659999847412109"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzD-I9-kDv">
-                                                        <rect key="frame" x="59.999999999999993" y="282" width="87.333333333333314" height="15"/>
+                                                        <rect key="frame" x="60.000000000000007" y="284" width="100.66666666666669" height="15"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12.659999847412109"/>
                                                         <color key="textColor" white="0.0" alpha="0.70491037190000005" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(213) 509-6995" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6LK-G4-5xa">
-                                                        <rect key="frame" x="60" y="308" width="325" height="20"/>
+                                                        <rect key="frame" x="60" y="310" width="325" height="21"/>
                                                         <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16.659999847412109"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFs-PZ-sUV">
-                                                        <rect key="frame" x="60" y="354.66666666666663" width="47.666666666666657" height="15"/>
+                                                        <rect key="frame" x="60" y="357.66666666666663" width="54.333333333333343" height="15"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12.659999847412109"/>
                                                         <color key="textColor" white="0.0" alpha="0.70491037190000005" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="18th june, 1989" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8t-Mc-een">
-                                                        <rect key="frame" x="60" y="380.66666666666663" width="325" height="20"/>
+                                                        <rect key="frame" x="60" y="383.66666666666663" width="325" height="21"/>
                                                         <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16.659999847412109"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gender_ic" translatesAutoresizingMaskIntoConstraints="NO" id="59d-oL-oEv">
-                                                        <rect key="frame" x="21" y="420.66666666666663" width="26" height="26"/>
+                                                        <rect key="frame" x="21" y="424.66666666666663" width="26" height="26"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJE-xF-3uE">
-                                                        <rect key="frame" x="60" y="426" width="42" height="15"/>
+                                                        <rect key="frame" x="60" y="430" width="47" height="15"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12.659999847412109"/>
                                                         <color key="textColor" white="0.0" alpha="0.70491037190000005" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="male" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LeK-Ow-Zc4">
-                                                        <rect key="frame" x="60" y="451" width="325" height="20"/>
+                                                        <rect key="frame" x="60" y="455" width="325" height="21"/>
                                                         <color key="textColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16.659999847412109"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -248,6 +248,7 @@
                         <outlet property="txtMobile" destination="6LK-G4-5xa" id="BbQ-jW-4Ff"/>
                         <outlet property="txtName" destination="MAs-hG-Z0q" id="1X0-8M-ZKy"/>
                         <outlet property="viewDetails" destination="map-JT-KXX" id="Ddc-b2-cqw"/>
+                        <outlet property="viewMain" destination="Ule-Qm-PTR" id="fq1-l1-7wi"/>
                         <outletCollection property="constrMix" destination="ZhA-sh-rUD" collectionClass="NSMutableArray" id="ZUo-a4-ZGp"/>
                         <outletCollection property="constrMix" destination="kiQ-Te-QDE" collectionClass="NSMutableArray" id="3Yf-tB-Uca"/>
                         <outletCollection property="constrMix" destination="tZE-dZ-3Ro" collectionClass="NSMutableArray" id="qZa-jp-Fml"/>

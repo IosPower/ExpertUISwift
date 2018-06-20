@@ -24,6 +24,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtBirthday: UITextField!
     @IBOutlet weak var txtMale: UITextField!
     
+    // UIView Outlets
+    @IBOutlet weak var viewMain: UIView!
+    
     // NSLayoutConstraint Outlets
     @IBOutlet var constrMix: [NSLayoutConstraint]!
     
@@ -32,10 +35,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        // use method 1 or method 2
+        
+        // setupUI()
+        getAllViewsAndSetLayout()
     }
-   
-    // MARK: - SetupUI
+    
+    // MARK: - Method 1
+    /// setupLayout with all constraint outlets
     func setupUI() {
         viewDetails.layer.cornerRadius = 3
         viewDetails.shadownew(value: 5.0)
@@ -44,14 +51,40 @@ class ViewController: UIViewController {
         PixelHelper.setConstraintAutomatic(constr: constrMix)
         
         // This Public Method is Used For Automatic set Font Size According To Device screen Size
-        PixelHelper.setFontForDevice(obj: [lblHeadingName, lblname, lblEmailId, lblMobile, lblBirthday, lblGender, txtName, txtEmail, txtMobile, txtBirthday, txtMale])
+        PixelHelper.setFontForDeviceFrom(obj: [lblHeadingName, lblname, lblEmailId, lblMobile, lblBirthday, lblGender, txtName, txtEmail, txtMobile, txtBirthday, txtMale])
         
         //1) Custom Font Set fontDefaultIphone6 in Appdelegate , and give result According To  Device.
         //2) 35 set for Iphone6plus
         
         //  lblL.setFontForDevice(fontName: "HelveticaNeue-UltraLight", sizeofFont: 35)
     }
-
+    
+    // MARK: - Method 2
+    /// getAllViewsAndSetLayout
+    func getAllViewsAndSetLayout() {
+        var arrViews: [UIView] = []
+        //subviews From
+        func subviewsFrom(view: UIView) {
+            arrViews.append(view)
+            for view in view.subviews {
+                subviewsFrom(view: view)
+            }
+        }
+        
+        subviewsFrom(view: viewMain)
+        
+        for viewCheckinh in arrViews {
+            // This Public Method is Used For Automatic set Constraints According To Device screen Size
+            PixelHelper.setConstraintAutomatic(constr: viewCheckinh.constraints)
+        }
+        
+        let arrFilter = arrViews.filter({$0 is UILabel || $0 is UITextView || $0 is UITextField || $0 is UIButton})
+        // This Public Method is Used For Automatic set Font Size According To Device screen Size
+        
+        PixelHelper.setFontForDeviceFrom(obj: arrFilter)
+       //PixelHelper.setFontForDeviceFrom(obj: arrFilter, isSetStaticSize: true)
+    }
+    
     // MARK: - Button Action
     @IBAction func btnNext(_ sender: Any) {
     }

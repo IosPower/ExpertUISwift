@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       
         // Note : Not Default Available For Iphone 4
         
-        PixelHelper.defaultScreenWidth = PixelHelper.DefaultTookWidthPixels.iPhone8Plus.rawValue
-        PixelHelper.defaultScreenHeight = PixelHelper.DefaultTookHeightPixels.iPhone8Plus.rawValue
+        PixelHelper.defaultScreenWidth = DefaultTookWidthPixels.iPhone8Plus.rawValue
+        PixelHelper.defaultScreenHeight = DefaultTookHeightPixels.iPhone8Plus.rawValue
         
         // Above Dependancy
         
